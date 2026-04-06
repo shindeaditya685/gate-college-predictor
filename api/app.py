@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../model'))
 from predict import predict_all, ALL_RECORDS
 
 app = Flask(__name__)
-CORS(app, origins=["https://gate-college-predictor-pink.vercel.app", "*"])   # allow React dev server (localhost:5173) to call this
+CORS(app)  # allow ALL origins — simplest fix   # allow React dev server (localhost:5173) to call this
 
 # ── helpers ──────────────────────────────────────────────────────────────────
 def unique_sorted(field):
