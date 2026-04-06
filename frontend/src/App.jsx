@@ -6,7 +6,7 @@ import FilterBar from "./components/FilterBar";
 import ResultsTable from "./components/ResultsTable";
 
 // eslint-disable-next-line no-undef
-const API = process.env.VITE_API_URL || "http://localhost:5000";
+const API = process.env.VITE_API_URL;
 
 export default function App() {
   const [loading, setLoading] = useState(false);
