@@ -5,8 +5,7 @@ import SummaryCards from "./components/SummaryCards";
 import FilterBar from "./components/FilterBar";
 import ResultsTable from "./components/ResultsTable";
 
-// eslint-disable-next-line no-undef
-const API = process.env.VITE_API_URL;
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 export default function App() {
   const [loading, setLoading] = useState(false);
